@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0447596b1a67de49ba5720fda0bdabe, type: 3}
+  m_Name: Sadie
+  m_EditorClassIdentifier: 
+  characterName: Sadie
+  brain: workspaces/default-f-jidd-l53gz4kbv2ff5rq/characters/sadie
+  avatar: {fileID: 0}
+  workspace: workspaces/default-f-jidd-l53gz4kbv2ff5rq
+  currentScene: workspaces/default-f-jidd-l53gz4kbv2ff5rq/characters/sadie
+  ownerShip: 0
+  defaultThumbnail: {fileID: 2800000, guid: 59d6ce82fbb36044f84e4248d4585875, type: 3}
+  index: 0
+  triggers: []
+  scenes:
+  - workspaces/default-f-jidd-l53gz4kbv2ff5rq/scenes/esteemed_demo
+  modelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/0652a95b-c82f-47c5-940f-23b3c281d455.glb
+  posUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/0652a95b-c82f-47c5-940f-23b3c281d455_posture.jpg
+  previewImgUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/0652a95b-c82f-47c5-940f-23b3c281d455_portrait.jpg
+  characterID: 5ecd6f96-15af-4bf2-9bf7-98702469f011
