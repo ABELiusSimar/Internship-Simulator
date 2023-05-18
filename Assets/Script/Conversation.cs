@@ -31,18 +31,12 @@ public class Conversation : MonoBehaviour
     // List of answers in string
     private string[] questions = new string[]
     {
-        /*"What is the main programming language used in Unity?",
-        "Where is PIT located?",
-        "What is the biggest city in North Brabant",*/
         "What is 2+2?"
     };
 
     // List of answers in string
     private string[][] options = new string[][]
     {
-        /*new string[] { "A) Java", "B) C#" },
-        new string[] { "A) Tilburg", "B) Rotterdam" },
-        new string[] { "A) Den Bosch", "B) Eindhoven" },*/
         new string[] { "A) Obvously it's 5", "B) The answer is 4", "C) The answer is 5", "D) Obviously it's 4" }
     };
 
@@ -108,12 +102,10 @@ public class Conversation : MonoBehaviour
                 AnswerText.text = "Correct!";
                 // If the answer is correct go to the next question
                 _QuestionIndex += 1;
-                // Judge the answers
             }
             else
             {
                 AnswerText.text = "Incorrect. The correct answer is " + _CurrentAnswer + ".";
-                // Judge the answers
             }
 
             // Set answered flag to prevent further answering

@@ -25,8 +25,8 @@ public class ScenarioManager : MonoBehaviour
         }
 
         // Set Scenario
-        TitleText.text = "Sprint 2 Demo";
-        DescText.text = "In this scenario, select an appropriate response for the question at hand";
+        TitleText.text = "How to Start";
+        DescText.text = "Say 'I'm ready to start my interview' to initiate the conversation. Press start when ready.";
     }
 
     // Update is called once per frame

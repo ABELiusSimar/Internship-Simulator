@@ -23,8 +23,8 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TitleText.text = "Title of the scenario goes here";
-        DescText.text = "Description of the title goes here";
+        TitleText.text = "New Job";
+        DescText.text = "Arrived at a software company for your interview";
     }
 
     // Update is called once per frame

@@ -32,6 +32,9 @@ namespace Inworld.Sample.UI
         [SerializeField] TMP_Text m_TextField;
         [SerializeField] RawImage m_Icon;
         [SerializeField] TMP_Text m_CharacterName;
+        // My Stuff
+        private GameObject _SelectJudgement;
+        public bool JudgementOpen = false;
         #endregion
 
         #region Properties
@@ -65,5 +68,45 @@ namespace Inworld.Sample.UI
             set => m_Icon = value;
         }
         #endregion
+
+        // My Stuff
+        private void Awake()
+        {
+            // Find the right game object
+            _SelectJudgement = GameObject.FindGameObjectWithTag("Judgement");
+        }
+
+        private void Update()
+        {
+            /* To-Do list
+             * Create a function here that keeps on reading the audio input to find the right input
+             * When the right input is read, open the corresponing judgement system
+             */
+            if (JudgementOpen == false)
+            {
+                if (Text.Contains("Of course"))
+                {
+                    Debug.Log("Judgement 1");
+                    _SelectJudgement.GetComponent<JudgementSystem>().Open1();
+                }
+                else if (Text.Contains("Sure"))
+                {
+                    Debug.Log("Judgement 2");
+                    _SelectJudgement.GetComponent<JudgementSystem>().Open2();
+                }
+                else if (Text.Contains("Why not"))
+                {
+                    Debug.Log("Judgement 3");
+                    _SelectJudgement.GetComponent<JudgementSystem>().Open3();
+                }
+                else if (Text.Contains("if you insist"))
+                {
+                    Debug.Log("Judgement 4");
+                    _SelectJudgement.GetComponent<JudgementSystem>().Open4();
+                }
+
+                JudgementOpen = true;
+            }
+        }
     }
 }
