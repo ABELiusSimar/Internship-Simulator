@@ -13,6 +13,7 @@ public class ScenarioManager : MonoBehaviour
     [Header("Start Game")]
     public int StartGame;
     public GameObject ConversationGame;
+    public GameObject KeyWords;
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +26,8 @@ public class ScenarioManager : MonoBehaviour
         }
 
         // Set Scenario
-        TitleText.text = "How to Start";
-        DescText.text = "Say 'I'm ready to start my interview' to initiate the conversation. Press start when ready.";
+        TitleText.text = "Tutorial";
+        DescText.text = "To start, say 'I'm ready to start my interview' to initiate the conversation. Please read through the keywords before starting. Press 'Start' when ready.";
     }
 
     // Update is called once per frame
@@ -41,6 +42,12 @@ public class ScenarioManager : MonoBehaviour
         StartGame = 1;
         ConversationGame.SetActive(true);
         this.gameObject.SetActive(false);
-        // Something to check which scenario was chosen
+    }
+
+    // Function to start conversation
+    public void StartConversation()
+    {
+        KeyWords.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 }

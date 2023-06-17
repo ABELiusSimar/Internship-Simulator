@@ -16,6 +16,9 @@ public class MainMenu : MonoBehaviour
     public Animator MyDoor = null;
     private bool _OpenTrigger = false;
 
+    [Header("Audio")]
+    public AudioSource DoorOpenSound = null;
+
     [Header("Scenario")]
     public TextMeshProUGUI TitleText;
     public TextMeshProUGUI DescText;
@@ -36,12 +39,6 @@ public class MainMenu : MonoBehaviour
     // Function to handle scenarios of the game
     public void SelectScenario()
     {
-        /* To-Do
-         * Select Scenario
-         * Start the scenario
-         * Add door opening animation (Done)
-         */
-
         // Door animation
         if (_OpenTrigger == false)
         {
@@ -50,6 +47,7 @@ public class MainMenu : MonoBehaviour
             Title.SetActive(false);
             Desc.SetActive(false);
             Button.SetActive(false);
+            DoorOpenSound.Play();
         }
     }
 }
